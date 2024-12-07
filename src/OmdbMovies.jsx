@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import './OmdbMovies.css';
+import './omdbMovies.css';
 import Loader from './Loader';
 
 const API_KEY = 'd13216df';
@@ -81,12 +81,12 @@ function OmdbMovies() {
 
     return (
         <section className="omdb">
-            {/* Header without Logo */}
+
             <header className="header">
                 <h1 className="app-title">OmdbMovies</h1>
             </header>
 
-            {/* Loader */}
+
             {loading && (
                 <div className="loader-container">
                     <Loader />
@@ -95,7 +95,7 @@ function OmdbMovies() {
 
             {error && <h1 className="error">Something went wrong. Please try again later.</h1>}
 
-            {/* Search Section */}
+
             <div className="search-container">
                 <input
                     type="search"
@@ -149,3 +149,5 @@ function OmdbMovies() {
 }
 
 export default OmdbMovies;
+
+// npm i @vercel/speed-insights
